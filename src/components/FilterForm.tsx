@@ -102,6 +102,7 @@ const FilterForm: FC = () => {
                     Оклад
                 </Input.Label>
                 <NumberInput
+                    min={0}
                     data-elem='salary-from-input'
                     placeholder='От'
                     value={payment_from}
@@ -135,6 +136,7 @@ const FilterForm: FC = () => {
                 />
             </Input.Wrapper>
             <NumberInput
+                min={0}
                 data-elem='salary-to-input'
                 placeholder='До'
                 value={payment_to}
